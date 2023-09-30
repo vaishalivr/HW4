@@ -1,0 +1,62 @@
+body {
+    font-family: 'Proxima Nova', sans-serif; 
+}
+h2, p {
+    opacity: 0.7;
+}
+.container {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+.names1{
+    color: #0077B5;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.names1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0077B5;
+    transition: width 0.3s;
+}
+  
+.names1:hover::after {
+    width: 100%;
+}
+
+.names2{
+    color: #0077B5;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.names2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0077B5;
+    transition: width 0.3s;
+}
+  
+.names2:hover::after {
+    width: 100%;
+}
+
+#ceo, #cfo, #cmo, #md, #svp, #vp, #ca, #ld, #hr {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 18px; 
+  }
+

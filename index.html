@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Alternate LinkedIn Profiles</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Alternate LinkedIn Profiles</h2>
+      <div>
+        <p>LinkedIn is all about people and their professional front.</p>
+        <p>
+          This is a curious hypothetical experiment about many other things the
+          people mentioned below would be doing apart from work.
+        </p>
+        <p>Click on the designation below to see their alternate profiles.</p>
+        <p id="ceo" class="names1">Chief Executive Officer</p>
+        <p id="cfo" class="names1">Chief Financial Officer</p>
+        <p id="cmo" class="names1">Chief Marketing Officer</p>
+        <p id="coo" class="names1">Chief Operating Officer</p>
+        <p id="md" class="names1">Managing Director</p>
+        <p id="svp" class="names2">Sr. Vice President</p>
+        <p id="vp" class="names2">Vice President</p>
+        <p id="ca" class="names2">Chartered Accountant</p>
+        <p id="hr" class="names2">Human Resources</p>
+        <p id="ld" class="names2">Learning and Development</p>
+      </div>
+
+      <svg width="600" height="400">
+        <rect
+          id="bottomRect"
+          width="600"
+          height="180"
+          x="0"
+          y="130"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          rx="10"
+          ry="10"
+        ></rect>
+
+        <rect
+          id="topRect"
+          width="600"
+          height="150"
+          x="0"
+          y="0"
+          fill="#0077B5"
+          stroke="black"
+          stroke-width="2"
+          rx="10"
+          ry="10"
+        ></rect>
+
+        <circle
+          id="imgCircle"
+          cx="100"
+          cy="150"
+          r="50"
+          fill="white"
+          stroke-width="2"
+          stroke="black"
+        />
+        <text id="profileName" x="10" y="220" font-size="20px"></text>
+        <text id="profileDesignation" x="10" y="240" font-size="15px"></text>
+        <text id="profileLocation" x="10" y="260" font-size="12px"></text>
+
+        <rect
+          id="defaultButton"
+          x="10"
+          y="270"
+          width="100"
+          height="25"
+          rx="10"
+          ry="10"
+          fill="#0077B5"
+        ></rect>
+
+        <rect
+          id="moreButton"
+          x="120"
+          y="270"
+          width="100"
+          height="25"
+          rx="10"
+          ry="10"
+          fill="#fff"
+          stroke="#0077B5"
+          stroke-width="2"
+        ></rect>
+
+        <image
+          id="tv"
+          x="60"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="watching television.png"
+          display="none"
+        />
+
+        <image
+          id="cat"
+          x="57"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="feeding-cat.png"
+          display="none"
+        />
+
+        <image
+          id="mopping"
+          x="57"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="mopping.png"
+          display="none"
+        />
+
+        <image
+          id="coffee"
+          x="57"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="coffee maker.png"
+          display="none"
+        />
+
+        <image
+          id="dishwasher"
+          x="57"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="dishwasher.png"
+          display="none"
+        />
+
+        <image
+          id="vaccum"
+          x="59"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="vaccuming.png"
+          display="none"
+        />
+
+        <image
+          id="vegetables"
+          x="57"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="vegetables.png"
+          display="none"
+        />
+
+        <image
+          id="cooking"
+          x="60"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="cooking.png"
+          display="none"
+        />
+
+        <image
+          id="resources"
+          x="60"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="resources.png"
+          display="none"
+        />
+
+        <image
+          id="laundry"
+          x="60"
+          y="110"
+          width="80"
+          height="80"
+          xlink:href="laundry.png"
+          display="none"
+        />
+
+        <text id="ceoButtonText" x="19" y="287" font-size="14px" fill="#fff">
+          Netflix Again
+        </text>
+
+        <text id="cfoButtonText" x="15" y="287" font-size="14px" fill="#fff">
+          Give Cat Food
+        </text>
+
+        <text id="cmoButtonText" x="24" y="287" font-size="14px" fill="#fff">
+          Empathise
+        </text>
+
+        <text id="cooButtonText" x="21" y="287" font-size="14px" fill="#fff">
+          More Coffee
+        </text>
+
+        <text id="mdButtonText" x="24" y="287" font-size="14px" fill="#fff">
+          Get Insight
+        </text>
+
+        <text id="svpButtonText" x="18" y="287" font-size="14px" fill="#fff">
+          Request How
+        </text>
+
+        <text id="vpButtonText" x="20" y="287" font-size="14px" fill="#fff">
+          Ask Broccoli
+        </text>
+
+        <text id="caButtonText" x="25" y="287" font-size="14px" fill="#fff">
+          Have Food
+        </text>
+
+        <text id="hrButtonText" x="33" y="287" font-size="14px" fill="#fff">
+          Supplies
+        </text>
+
+        <text id="ldButtonText" x="24" y="287" font-size="14px" fill="#fff">
+          Pile Clothes
+        </text>
+
+        <text
+          id="moreButtonText"
+          x="150"
+          y="287"
+          font-size="14px"
+          fill="#0077B5"
+        >
+          More
+        </text>
+      </svg>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
